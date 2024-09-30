@@ -1,0 +1,25 @@
+{
+  "name": "aido",
+  "version": "1.0.0",
+  "description": "Aiding Opensource",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrsha/aido.git"
+  },
+  "keywords": [
+    "opensource",
+    "github",
+    "aido",
+    "donations"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrsha/aido/issues"
+  },
+  "homepage": "https://github.com/adrsha/aido#readme"
+}
