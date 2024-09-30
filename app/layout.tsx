@@ -1,3 +1,6 @@
+import "./layout.css"
+import Nav from "./Components/Nav/page"
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav></Nav>
+        {children}
+      </body>
     </html>
   )
 }

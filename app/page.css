@@ -1,0 +1,33 @@
+div.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+div.hero div.bigboy,
+div.hero div.littleboy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+div.hero div.bigboy {
+  transform: translate(-90%, -50%);
+  height: 50%;
+  background: radial-gradient(circle, var(--color-gray-shade1) 0%, var(--color-gray-shade2) 92%);
+  color: var(--color-white-shade1);
+  border: 1px solid var(--color-white-shade2);
+}
+
+div.hero div.littleboy {
+  transform: translate(-10%, -50%);
+  height: 40%;
+  background: radial-gradient(circle, var(--color-white-shade3a) 0%, var(--color-blue-shade1a) 92%);
+  backdrop-filter: blur(20px);
+  color: var(--color-blue-shade1);
+}
