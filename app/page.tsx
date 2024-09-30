@@ -4,10 +4,15 @@ export default function Page() {
     <>
       <div className="hero">
         <div className="bigboy">
-          <h1>ai</h1>
+          ai
         </div>
         <div className="littleboy">
-          <h1>do</h1>
+          do
+        </div>
+
+        <div id="uselessShinyBall">
+          <div id="ball">
+          </div>
         </div>
       </div>
     </>

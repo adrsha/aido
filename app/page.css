@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 div.hero {
   position: relative;
   min-height: 100vh;
@@ -14,6 +17,9 @@ div.hero div.littleboy {
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
+  font-size: 14rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
 }
 
 div.hero div.bigboy {
@@ -30,4 +36,34 @@ div.hero div.littleboy {
   background: radial-gradient(circle, var(--color-white-shade3a) 0%, var(--color-blue-shade1a) 92%);
   backdrop-filter: blur(20px);
   color: var(--color-blue-shade1);
+}
+
+
+div.hero div#uselessShinyBall {
+  position: absolute;
+  bottom: 0;
+  width: 10vh;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, var(--color-white-shade3a) 0%, var(--color-blue-shade1a) 92%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--color-gray-shade1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+div.hero div#uselessShinyBall div#ball {
+  width: 30%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: width 0.1s;
+}
+
+div.hero div#uselessShinyBall:hover div#ball {
+  width: 40%;
 }

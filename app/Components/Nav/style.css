@@ -1,33 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-.navBar{
-    width: 100vw;
-    height: auto;
-}
-#navRightSide{
-    height: 5vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    float: right;
-}
-.navContent{
-    height: 5vh;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: #F5E6D3;
-}
-.navContent:hover{
-    background-color: #0C1D1D;
 
+.navBar {
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#navRightSide {
+  height: 5vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+}
+
+.navContent {
+  height: 5vh;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #F5E6D3;
+}
+
+.navContent:hover {
+  background-color: #0C1D1D;
 }
