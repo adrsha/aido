@@ -9,33 +9,38 @@ div.hero {
 div.hero div.bigboy,
 div.hero div.littleboy {
   position: absolute;
-  top: 50%;
-  left: 50%;
   font-size: 100px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   aspect-ratio: 1;
-  font-size: 14rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 900;
+  font-size: 20rem;
 }
 
 div.hero div.bigboy {
-  transform: translate(-90%, -50%);
-  height: 50%;
-  background: radial-gradient(circle, var(--color-gray-shade1) 0%, var(--color-gray-shade2) 92%);
+  /* transform: translate(-90%, -50%); */
+  --height: 37vw;
+  top: calc(50vh - var(--height)/2);
+  left: calc(50vw - var(--height)*9/10);
+  height: var(--height);
   color: var(--color-white-shade1);
+  backdrop-filter: blur(20px);
   border: 1px solid var(--color-white-shade2);
+  background: radial-gradient(circle, var(--color-white-shade1a) 0%, var(--color-gray-shade2a) 82%);
 }
 
 div.hero div.littleboy {
-  transform: translate(-10%, -50%);
-  height: 40%;
-  background: radial-gradient(circle, var(--color-white-shade3a) 0%, var(--color-blue-shade1a) 92%);
-  backdrop-filter: blur(20px);
+  /* transform: translate(-10%, -50%); */
+  --height: 30vw;
+  top: calc(50vh - var(--height)/2);
+  left: calc(50vw - var(--height)*1/10);
+  height: var(--height);
   color: var(--color-blue-shade1);
+  backdrop-filter: blur(20px);
+  background: radial-gradient(circle, var(--color-white-shade3a) 0%, var(--color-blue-shade1a) 82%);
 }
 
 
@@ -66,4 +71,25 @@ div.hero div#uselessShinyBall div#ball {
 
 div.hero div#uselessShinyBall:hover div#ball {
   width: 40%;
+}
+
+div.bubbles {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 12;
+}
+
+div.bubbles img:first-child {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+}
+
+div.bubbles img:last-child {
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
 }
