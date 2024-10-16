@@ -1,19 +1,21 @@
 import React from 'react';
 import './style.css'; 
 
-const Nav = () => {
-    let hello : [] = [
-        ["adarsha/sharkCalc", "step by step pyhton based calc", 58],
-        ["asur/pasm", "step by step rust based password manager", 46],
-        ["adarsha/nvim", "neovim configurations", 78]
-    ]
+const Card = ({description, info}) => {
+
   return (
    <>
-    <div>
-        {hello[0][0]}
+    <div className='headCard'>
+        <div className="cardLeft contentContainer">
+            <div className="devPhoto"></div>
+        </div>
+        <div className="cardRight contentContainer">
+            <div className="cardDescription">{description}</div>
+            <div className="cardInfo">{info}</div>
+        </div>
     </div>
    </>
   );
 };
 
-export default Nav;
+export default Card;

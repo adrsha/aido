@@ -1,4 +1,5 @@
 /* CSS variables */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 :root {
   --color-gray-shade1: #3F5250;
@@ -17,6 +18,11 @@
   --color-blue-shade1a: rgba(47, 80, 79, 0.2);
   --color-blue-shade2a: rgba(0, 45, 52, 0.5);
   --color-black-shade1a: rgba(17, 24, 15, 0.5);
+  --color-best-bg-dark-alpha: #2A323039;
+  --color-best-bg-light: #41463E;
+  --color-card-bg-dark: #151E1C;
+  --card-content-letter-color1: #F0DCC2ff;
+  --photosize: 90%;
 }
 
 /* General CSS Rules */

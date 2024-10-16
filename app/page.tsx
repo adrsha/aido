@@ -1,5 +1,13 @@
 import "./page.css"
+import "./Components/Card/page"
+import Card from "./Components/Card/page"
+
 export default function Page() {
+  let cardContent : [string, string, number][] = [
+    ["adarsha/sharkCalc", "step by step pyhton based calc", 58],
+    ["asur/pasm", "step by step rust based password manager", 46],
+    ["adarsha/nvim", "neovim configurations", 78]
+]
   return (
     <>
       <div className="hero">
@@ -18,6 +26,10 @@ export default function Page() {
           <div id="ball">
           </div>
         </div>
+        <Card
+          description={cardContent[0][1]}
+          info={cardContent[0][0]}
+        />
       </div>
     </>
   )

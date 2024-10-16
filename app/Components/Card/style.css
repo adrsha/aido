@@ -1,0 +1,43 @@
+.headCard{
+    height: 20vh;
+    width: 30vw;
+    background-color: var(--color-best-bg-light);
+    border-radius: 3vh;
+    display: flex;
+}
+
+.devPhoto{
+    height: var(--photosize);
+    width: var(--photosize);
+    background-color: rebeccapurple;
+    border-radius: 2vh;
+}
+.contentContainer{
+    padding: 10px;
+}
+.cardLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+.cardRight{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardDescription{
+  color: var(--card-content-letter-color1);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 0.9;
+  font-style: normal;
+}
+.cardInfo{
+    color: var(--card-content-letter-color1);
+    font-family: "Quicksand", sans-serif;
+    font-size:xx-large;
+    font-weight: 700;
+    font-style:normal;
+  }
